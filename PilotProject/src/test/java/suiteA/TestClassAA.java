@@ -3,16 +3,15 @@ package suiteA;
 import org.testng.annotations.Test;
 
 import TestBase.TestBase;
+import dataprovider.TestDataProvider;
 
 public class TestClassAA extends TestBase{
 	
-	@Test
+	@Test(dataProviderClass = TestDataProvider.class, dataProvider = "dataProviderSuiteA")
 	public void testAA() throws InterruptedException {
-		System.out.println("Starting Test AA");
-		test.info("Start Test AA");
-		Thread.sleep(3000);
-		System.out.println("Ending Test AA");
-		test.info("End Test AA");
+		log("Starting test AA");
+		Thread.sleep(1000);
+		log("Ending Test AA");
 	}
 
 }

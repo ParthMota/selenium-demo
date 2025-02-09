@@ -6,8 +6,8 @@
       <class name="suiteA.TestClassA">
         <methods>
           <include name="init"/>
-          <include name="end"/>
           <include name="testA"/>
+          <include name="end"/>
         </methods>
       </class> <!-- suiteA.TestClassA -->
     </classes>

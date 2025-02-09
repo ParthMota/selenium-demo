@@ -5,10 +5,6 @@
 		<classes>
 			<class name="suiteA.TestClassA"></class>
 			<class name="suiteA.TestClassAA"></class>
-			<class name="suiteB.TestClassB"></class>
-			<class name="suiteB.TestClassBB"></class>
-			<class name="suiteC.TestClassC"></class>
-			<class name="suiteC.TestClassCC"></class>
 		</classes>
 	</test> <!--
 	Test -->

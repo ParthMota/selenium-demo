@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-08T22:51:21 IST" name="Default suite" finished-at="2025-02-08T22:51:21 IST" duration-ms="52">
+  <suite started-at="2025-02-09T18:39:24 IST" name="Default suite" finished-at="2025-02-09T18:39:24 IST" duration-ms="74">
     <groups>
     </groups>
-    <test started-at="2025-02-08T22:51:21 IST" name="Default test" finished-at="2025-02-08T22:51:21 IST" duration-ms="52">
+    <test started-at="2025-02-09T18:39:24 IST" name="Default test" finished-at="2025-02-09T18:39:24 IST" duration-ms="74">
       <class name="suiteA.TestClassA">
-        <test-method is-config="true" signature="init(org.testng.ITestResult)[pri:0, instance:suiteA.TestClassA@5bf0d49]" started-at="2025-02-08T22:51:21 IST" name="init" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739035281112" status="FAIL">
+        <test-method is-config="true" signature="init(org.testng.ITestResult)[pri:0, instance:suiteA.TestClassA@7c7a06ec]" started-at="2025-02-09T18:39:24 IST" name="init" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739106564492" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -45,25 +45,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testA()[pri:0, instance:suiteA.TestClassA@5bf0d49]" started-at="2025-02-08T22:51:21 IST" name="testA" finished-at="2025-02-08T22:51:21 IST" duration-ms="0" status="SKIP">
+        <test-method signature="testA(java.lang.String,java.lang.String)[pri:0, instance:suiteA.TestClassA@7c7a06ec]" started-at="2025-02-09T18:39:24 IST" name="testA" data-provider="dataProviderSuiteA" finished-at="2025-02-09T18:39:24 IST" duration-ms="0" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @BeforeTest annotated init.
-For more information on native dependency injection please refer to https://testng.org/#_dependency_injection]]>
+Data Provider public static java.lang.Object[][] dataprovider.TestDataProvider.dataProviderSuiteA(java.lang.reflect.Method) returned a null value]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @BeforeTest annotated init.
-For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
-at org.testng.internal.Parameters.createParameters(Parameters.java:699)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
+Data Provider public static java.lang.Object[][] dataprovider.TestDataProvider.dataProviderSuiteA(java.lang.reflect.Method) returned a null value
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:161)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:809)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
@@ -83,7 +85,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testA -->
-        <test-method is-config="true" signature="end()[pri:0, instance:suiteA.TestClassA@5bf0d49]" started-at="2025-02-08T22:51:21 IST" name="end" finished-at="2025-02-08T22:51:21 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="end()[pri:0, instance:suiteA.TestClassA@7c7a06ec]" started-at="2025-02-09T18:39:24 IST" name="end" finished-at="2025-02-09T18:39:24 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
