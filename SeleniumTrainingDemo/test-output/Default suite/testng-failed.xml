@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="browsers.SeleniumMultipleBrowsers">
+      <class name="browsers.InvokeDynamicBrowser">
         <methods>
-          <include name="openInChrome"/>
-          <include name="openInIE"/>
-          <include name="openInEdge"/>
+          <include name="openYahoo"/>
+          <include name="openBrowser"/>
+          <include name="quiteBrowser"/>
+          <include name="openFacebook"/>
         </methods>
-      </class> <!-- browsers.SeleniumMultipleBrowsers -->
+      </class> <!-- browsers.InvokeDynamicBrowser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
