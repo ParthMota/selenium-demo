@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="browsers.InvokeDynamicBrowser">
+      <class name="locators.XpathClass">
         <methods>
-          <include name="openYahoo"/>
-          <include name="openBrowser"/>
-          <include name="quiteBrowser"/>
-          <include name="openFacebook"/>
+          <include name="XpathTest"/>
         </methods>
-      </class> <!-- browsers.InvokeDynamicBrowser -->
+      </class> <!-- locators.XpathClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

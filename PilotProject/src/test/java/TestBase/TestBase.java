@@ -3,7 +3,9 @@ package TestBase;
 import java.lang.reflect.Method;
 
 import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -17,14 +19,14 @@ public class TestBase {
 	public ExtentTest test;
 	public ITestResult res;
 
-	@BeforeTest
+	@BeforeMethod
 	public void init(ITestResult res) {
 		this.res = res;
 		extent = ExtentReporterManager.getReporter();
 		test = extent.createTest(res.getMethod().getMethodName().toUpperCase());
 	}
 
-	@AfterTest
+	@AfterMethod
 	public void end() {
 		extent.flush();
 	}
