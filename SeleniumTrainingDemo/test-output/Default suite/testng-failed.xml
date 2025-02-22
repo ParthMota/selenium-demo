@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="locators.XpathClass">
+      <class name="seleniumwaits.SeleniumImplicitWaits">
         <methods>
-          <include name="XpathTest"/>
+          <include name="googleSearchTest"/>
         </methods>
-      </class> <!-- locators.XpathClass -->
+      </class> <!-- seleniumwaits.SeleniumImplicitWaits -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
