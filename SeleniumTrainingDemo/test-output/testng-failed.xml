@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumwaits.SeleniumExplicitWaits">
+      <class name="SeleniumScenario1.VerifyElements">
         <methods>
-          <include name="finish"/>
-          <include name="setup"/>
-          <include name="verifyAlert"/>
+          <include name="afterMethod"/>
+          <include name="verifyElementEnableTest"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- seleniumwaits.SeleniumExplicitWaits -->
+      </class> <!-- SeleniumScenario1.VerifyElements -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
