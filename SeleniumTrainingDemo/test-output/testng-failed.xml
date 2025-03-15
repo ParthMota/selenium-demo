@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumScenario1.VerifyElements">
+      <class name="SeleniumScenario2.DropDownsDemo">
         <methods>
           <include name="afterMethod"/>
-          <include name="verifyElementEnableTest"/>
+          <include name="useDropdownTest"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- SeleniumScenario1.VerifyElements -->
+      </class> <!-- SeleniumScenario2.DropDownsDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
